@@ -3,14 +3,16 @@
 <head>
 <meta charset="UTF-8">
 <meta name="viewport" content="width=device-width,initial-scale=1">
-<meta name="description" content="MAE Saúl Dávila Pantoja — Consultor Estratégico Certificado | AIDN Strategic Consulting. Descarga mi vCard con contacto, RFC y datos de pago.">
+<meta name="description" content="MAE Saúl Dávila Pantoja — Consultor Estratégico | AIDN Strategic Consulting. Descarga mi vCard con contacto, RFC y datos de pago.">
+<meta name="robots" content="index, follow">
+<meta name="author" content="MAE Saúl Dávila Pantoja - AIDN Strategic Consulting">
 <meta name="theme-color" content="#03b4d6">
 
 <!-- Open Graph / WhatsApp -->
 <meta property="og:type"              content="website">
 <meta property="og:url"               content="https://maesauldavila.github.io/tarjeta-digital/">
 <meta property="og:title"             content="MAE Saúl Dávila Pantoja">
-<meta property="og:description"       content="Consultor Estratégico Certificado. Perfil profesional con información de contacto, detalles fiscales y cuentas bancarias integradas.">
+<meta property="og:description"       content="Consultor Estratégico. Perfil profesional con información de contacto, detalles fiscales y cuentas bancarias integradas.">
 <meta property="og:image"             content="https://maesauldavila.github.io/tarjeta-digital/banner-tarjeta.png">
 <meta property="og:image:secure_url"  content="https://maesauldavila.github.io/tarjeta-digital/banner-tarjeta.png">
 <meta property="og:image:type"        content="image/png">
@@ -23,10 +25,13 @@
 <meta name="twitter:card"        content="summary_large_image">
 <meta name="twitter:url"         content="https://maesauldavila.github.io/tarjeta-digital/">
 <meta name="twitter:title"       content="MAE Saúl Dávila Pantoja | Consultor Estratégico">
-<meta name="twitter:description" content="Consultor Estratégico Certificado. Perfil profesional con información de contacto, detalles fiscales y cuentas bancarias integradas.">
+<meta name="twitter:description" content="Consultor Estratégico. Perfil profesional con información de contacto, detalles fiscales y cuentas bancarias integradas.">
 <meta name="twitter:image"       content="https://maesauldavila.github.io/tarjeta-digital/banner-tarjeta.png">
 
 <title>MAE Saúl Dávila | AIDN Strategic Consulting</title>
+
+<!-- Canonical -->
+<link rel="canonical" href="https://maesauldavila.github.io/tarjeta-digital/">
 
 <link rel="icon"            type="image/x-icon"      href="favicon.ico">
 <link rel="icon"            type="image/png" sizes="32x32" href="favicon-32x32.png">
@@ -367,24 +372,24 @@ body {
 .credential-item:active { transform:translateX(1px); box-shadow:var(--shad-sm); }
 
 /* ── Bottom-line hover effect ── */
-.phone-item::after,.email-item::after,.cedula-item::after,.cert-item::after,.web-item::after {
+.phone-item::after,.email-item::after,.cedula-item::after,.web-item::after {
   content:''; position:absolute; bottom:0; left:50%;
   transform:translateX(-50%) scaleX(0); width:80%; height:2px;
   background:linear-gradient(90deg,transparent,var(--primary),transparent);
   transition:transform var(--t-base); z-index:1;
 }
 .phone-item:hover::after,.email-item:hover::after,.cedula-item:hover::after,
-.cert-item:hover::after,.web-item:hover::after { transform:translateX(-50%) scaleX(1); }
-.phone-item:hover,.email-item:hover,.cedula-item:hover,.cert-item:hover,.web-item:hover {
+.web-item:hover::after { transform:translateX(-50%) scaleX(1); }
+.phone-item:hover,.email-item:hover,.cedula-item:hover,.web-item:hover {
   background:rgba(3,180,214,.08); border-color:var(--primary);
 }
 .phone-item:hover .credential-value,.email-item:hover .credential-value,
-.cedula-item:hover .credential-value,.cert-item:hover .credential-value,
+.cedula-item:hover .credential-value,
 .web-item:hover .credential-value,
 .phone-item:hover .credential-label,.email-item:hover .credential-label,
-.cedula-item:hover .credential-label,.cert-item:hover .credential-label,
+.cedula-item:hover .credential-label,
 .web-item:hover .credential-label { color:var(--primary); }
-.phone-item:active,.email-item:active,.cedula-item:active,.cert-item:active,.web-item:active {
+.phone-item:active,.email-item:active,.cedula-item:active,.web-item:active {
   transform:translateX(0) scale(.98);
 }
 
@@ -751,7 +756,7 @@ body {
   <!-- Sección personal -->
   <section class="personal-section" aria-label="Información de contacto">
     <h2 class="personal-name">MAE Saúl Dávila Pantoja</h2>
-    <p class="personal-title">Consultor Estratégico Certificado | Planeación y Dirección Empresarial</p>
+    <p class="personal-title">Consultor Estratégico | Planeación y Dirección Empresarial</p>
     <p class="personal-tagline">Estrategias que definen futuros</p>
 
     <div class="credentials" role="list">
@@ -768,20 +773,6 @@ body {
         </svg>
         <span class="credential-label">Cédula:</span>
         <span class="credential-value">14051498</span>
-      </button>
-
-      <button class="credential-item cert-item" id="certItem"
-              type="button" aria-label="Certificación OLA/CICA — toque para copiar código, mantén para verificar"
-              role="listitem">
-        <svg class="credential-icon" id="certIcon" viewBox="0 0 24 24" fill="none"
-             stroke="currentColor" stroke-width="2" stroke-linecap="round"
-             stroke-linejoin="round" aria-hidden="true">
-          <path d="M14 2H6a2 2 0 0 0-2 2v16a2 2 0 0 0 2 2h12a2 2 0 0 0 2-2V8z"/>
-          <polyline points="14 2 14 8 20 8"/>
-          <path d="M16 13l-4 4-2-2"/>
-        </svg>
-        <span class="credential-label">Cert. Internacional OLA/CICA:</span>
-        <span class="credential-value">Administración Estratégica (2025-2031)</span>
       </button>
 
       <button class="credential-item phone-item" id="phoneItem"
@@ -977,12 +968,12 @@ body {
 const vCardData = `BEGIN:VCARD
 VERSION:3.0
 FN:MAE Saúl Dávila Pantoja
-TITLE:Consultor Estratégico Certificado
+TITLE:Consultor Estratégico
 ORG:AIDN Strategic Consulting
 TEL;TYPE=CELL:+5215537191248
 EMAIL:sauldavila@aidnstrategic.com
 URL:https://aidnstrategic.com
-NOTE:Planeación y Dirección Empresarial | Certificación Internacional OLA/CICA - Administración Estratégica (2025-2031)
+NOTE:Planeación y Dirección Empresarial
 END:VCARD`;
 
 /* ── Estado ── */
@@ -1109,20 +1100,6 @@ async function copyCedula() {
 }
 function onCedulaPress()   { cedulaIsHolding = false; cedulaTimer = setTimeout(() => { cedulaIsHolding = true; window.open('https://cedulaprofesional.sep.gob.mx/#tab-01','_blank','noopener,noreferrer'); showNotification('Abriendo verificación SEP','success'); playSound(900,.15); vibrate(30); }, 800); }
 function onCedulaRelease() { if (cedulaTimer) { clearTimeout(cedulaTimer); cedulaTimer = null; } setTimeout(() => { cedulaIsHolding = false; }, 300); }
-
-/* Certificación: toque → copiar código · hold → verificar OLA */
-let certIsHolding = false;
-let certTimer = null;
-
-async function copyCertCode() {
-  if (certIsHolding) return;
-  playSound(700, .1); vibrate(20); animateIcon(els.certIcon);
-  const ok = await copyToClipboard('CPI/25-31/04');
-  if (ok) { showNotification('Código de certificación copiado', 'success'); animateLogo(); animateBrandName(); }
-  else    { showNotification('No se pudo copiar', 'info'); }
-}
-function onCertPress()   { certIsHolding = false; certTimer = setTimeout(() => { certIsHolding = true; window.open('https://www.olalatinoamerica.org/about-6-1','_blank','noopener,noreferrer'); showNotification('Abriendo verificación OLA','success'); playSound(900,.15); vibrate(30); }, 800); }
-function onCertRelease() { if (certTimer) { clearTimeout(certTimer); certTimer = null; } setTimeout(() => { certIsHolding = false; }, 300); }
 
 /* Teléfono: toque → WhatsApp · hold → descargar vCard */
 let phoneIsHolding = false;
@@ -1349,12 +1326,10 @@ document.addEventListener('DOMContentLoaded', () => {
   /* Cachear elementos */
   els.notification    = document.getElementById('notification');
   els.cedulaItem      = document.getElementById('cedulaItem');
-  els.certItem        = document.getElementById('certItem');
   els.phoneItem       = document.getElementById('phoneItem');
   els.emailItem       = document.getElementById('emailItem');
   els.webItem         = document.getElementById('webItem');
   els.cedulaIcon      = document.getElementById('cedulaIcon');
-  els.certIcon        = document.getElementById('certIcon');
   els.phoneIcon       = document.getElementById('phoneIcon');
   els.emailIcon       = document.getElementById('emailIcon');
   els.webIcon         = document.getElementById('webIcon');
@@ -1382,7 +1357,6 @@ document.addEventListener('DOMContentLoaded', () => {
 
   /* Credenciales */
   bindHold(els.cedulaItem, copyCedula, onCedulaPress, onCedulaRelease);
-  bindHold(els.certItem,   copyCertCode, onCertPress, onCertRelease);
   bindHold(els.phoneItem,  openWhatsApp, onPhonePress, onPhoneRelease);
   bindHold(els.emailItem,  openMailClient, onEmailPress, onEmailRelease);
   bindHold(els.webItem,    openWebsite, onWebPress, onWebRelease);
