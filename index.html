@@ -926,7 +926,7 @@ body {
             <rect x="1" y="4" width="22" height="16" rx="2" ry="2"/>
             <line x1="1" y1="10" x2="23" y2="10"/>
           </svg>
-          Copiar CLABE NU
+          Copiar Tarjeta NU
         </button>
         <button class="modal-btn" id="copyCard" type="button">
           <svg viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2"
@@ -1269,9 +1269,9 @@ function openValidadorSAT() {
 }
 
 async function copyCLABE() {
-  const ok = await copyToClipboard('638180000199128224');
-  if (ok) { showNotification('CLABE NU copiada','success'); playSound(900,.15); vibrate(30); animateLogo(); animateBrandName(); }
-  else    { showNotification('No se pudo copiar CLABE','info'); }
+  const ok = await copyToClipboard('5101254084314525');
+  if (ok) { showNotification('Tarjeta NU copiada','success'); playSound(900,.15); vibrate(30); animateLogo(); animateBrandName(); }
+  else    { showNotification('No se pudo copiar tarjeta','info'); }
 }
 
 async function copyCardNumber() {
