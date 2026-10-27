@@ -1,445 +1,296 @@
-# 🎯 Tarjeta Digital Profesional
+# Tarjeta digital · MAE Saúl Dávila Pantoja
 
-[![Status](https://img.shields.io/badge/status-active-success.svg)]()
-[![License](https://img.shields.io/badge/license-proprietary-red.svg)]()
+[![Estado](https://img.shields.io/badge/estado-activo-success.svg)]()
+[![Licencia](https://img.shields.io/badge/licencia-propietaria-red.svg)]()
+[![Versión](https://img.shields.io/badge/versión-2026.10-blue.svg)]()
 
-> Tarjeta digital profesional con verificación de credenciales, datos fiscales integrados y experiencia de usuario premium.
+> Tarjeta digital profesional de MAE Saúl Dávila Pantoja, Consultor Estratégico y fundador de AIDN Strategic Consulting: contacto en un toque, verificación de la cédula profesional, código QR con tarjeta de contacto y datos fiscales y de pago a la mano de clientes.
 
-🔗 **Demo en vivo:** [maesauldavila.github.io/tarjeta-digital](https://maesauldavila.github.io/tarjeta-digital/)
-
----
-
-## 📋 Contenido
-
-- [Características](#-características)
-- [Propiedad Intelectual](#️-propiedad-intelectual)
-- [Tecnologías](#️-tecnologías)
-- [Instalación Local](#-instalación-local)
-- [Licencia](#-licencia)
-- [Contacto](#-contacto)
+**Tarjeta en vivo:** [maesauldavila.github.io/tarjeta-digital](https://maesauldavila.github.io/tarjeta-digital/)
 
 ---
 
-## ✨ Características
+## Contenido
 
-### Diseño Premium - Boutique
-- Glassmorphism con efectos de blur y transparencias
-- Modo oscuro automático con persistencia
-- 15+ micro-interacciones y animaciones fluidas
-- 100% responsive (320px - 4K)
-- WCAG 2.1 AA compliant
-- Nivel boutique agency ($8,500-11,000 USD valor de mercado)
-
-### Funcionalidades
-
-| Elemento | Clic Normal | Mantener 1 seg |
-|----------|-------------|----------------|
-| **Ícono Central ⊚** | Modal QR + vCard | Easter egg |
-| **Cédula** | Copiar número | Verificar en SEP |
-| **Certificación** | Copiar código | Verificar en OLA |
-| **Teléfono** | Abrir WhatsApp | Descargar .vcf |
-| **Email** | Abrir cliente | Copiar email |
-
-### Datos Integrados
-- ✅ Verificación de credenciales (Cédula SEP, Cert. OLA/CICA)
-- ✅ Información fiscal completa (RFC, Régimen, CLABE, Tarjeta)
-- ✅ Feedback multisensorial (audio + háptico)
-- ✅ Generación de QR bajo demanda
-- ✅ Descarga de vCard
-
-### Performance
-- **Peso:** ~50KB (ultra-ligero)
-- **Carga:** <1s en 3G
-- **Lighthouse:** 98/100 Performance
+- [Qué es](#qué-es)
+- [Cómo se usa](#cómo-se-usa)
+- [Datos personales publicados](#datos-personales-publicados)
+- [Propiedad intelectual](#propiedad-intelectual)
+- [Restricciones de uso](#restricciones-de-uso)
+- [Licencia propietaria](#licencia-propietaria)
+- [Alcance de la protección y elementos de terceros](#alcance-de-la-protección-y-elementos-de-terceros)
+- [Aspectos técnicos](#aspectos-técnicos)
+- [Estructura del proyecto](#estructura-del-proyecto)
+- [Preguntas frecuentes](#preguntas-frecuentes)
+- [Cómo reportar un uso no autorizado](#cómo-reportar-un-uso-no-autorizado)
+- [Contribuciones](#contribuciones)
+- [Contacto](#contacto)
+- [Historial de cambios](#historial-de-cambios)
 
 ---
 
-## 🛡️ Propiedad Intelectual
+## Qué es
 
-### ⚠️ PROTECCIÓN DE MARCA Y CONTENIDO
+Una tarjeta de presentación digital de archivo único (HTML, CSS y JavaScript) pensada para compartirse por WhatsApp, código QR o enlace. Reúne en una sola pantalla:
+
+- **Identidad profesional:** nombre, título «Consultor Estratégico · Planeación y dirección empresarial» y cédula profesional verificable.
+- **Contacto directo:** WhatsApp, correo electrónico y sitio web de AIDN.
+- **Tarjeta de contacto (vCard):** descargable y en código QR.
+- **Datos fiscales y de pago** para clientes, copiables con un toque.
+- **Tema claro y oscuro** y retroalimentación sonora y háptica discreta.
+
+---
+
+## Cómo se usa
+
+Cada elemento responde a un **toque** y, en la mayoría, a una **pulsación sostenida** (aproximadamente 0.8 segundos).
+
+| Elemento | Toque | Mantener presionado |
+|----------|-------|---------------------|
+| **Logotipo AIDN** | Prepara la acción | Doble toque: abre aidnstrategic.com |
+| **Ícono central ⊚** | Abre el modal con QR y datos | Muestra la frase oculta de AIDN |
+| **Cédula** | Copia el número | Abre la verificación en la SEP |
+| **Teléfono** | Abre WhatsApp | Descarga la tarjeta de contacto (.vcf) |
+| **Correo electrónico** | Abre el cliente de correo | Copia la dirección |
+| **Sitio web** | Abre aidnstrategic.com | Copia la URL |
+
+**Modal del código QR:**
+
+- **Tarjeta de contacto:** descargar el QR, compartirlo y copiar la vCard.
+- **Información fiscal:** copiar el RFC, copiar el régimen y verificar en el SAT.
+- **Información de pagos:** copiar los datos de pago de las cuentas indicadas.
+
+**Atajos:** `Esc` cierra el modal y `Ctrl + Alt + T` cambia el tema.
+
+---
+
+## Datos personales publicados
+
+La tarjeta muestra de forma deliberada datos de contacto, la cédula profesional, información fiscal y datos de pago, para que clientes y contactos profesionales puedan usarlos. Por eso:
+
+- Esos datos son **personales y se publican con un fin específico**: contacto, verificación profesional y pago de servicios a AIDN.
+- **Está prohibido** extraerlos de forma automatizada, recopilarlos, venderlos, incorporarlos a bases de datos o usarlos para suplantar la identidad de su titular, solicitar pagos en su nombre o cualquier fin distinto.
+- La cédula puede verificarse en el portal oficial de la SEP y el RFC en el validador del SAT.
+- Para confirmar cualquier dato de pago antes de transferir, usa los canales de contacto de este documento.
+
+---
+
+## Propiedad intelectual
 
 **Este repositorio está protegido por derechos de autor.**
 
-#### 🏢 Marca Corporativa AIDN
+### Marca de AIDN
 
-**ELEMENTOS PROTEGIDOS:**
-- ✓ Logo AIDN (hexágono con gradiente azul)
-- ✓ Paleta de colores (#0c2a85, #03b4d6)
-- ✓ Sistema de branding
-- ✓ Tagline corporativo: "Catapultando empresas para liderar el cambio"
+- Logotipo hexagonal de AIDN y su variante animada
+- Denominación «AIDN Strategic Consulting»
+- Sistema de identidad: paleta, tipografía y componentes
+- Lema: «Diseñamos la estructura estratégica para un crecimiento sostenible»
 
-**© 2025 AIDN. Todos los derechos reservados.**
+**© 2026 AIDN Strategic Consulting. Todos los derechos reservados.**
 
-#### 👤 Branding Personal
+### Identidad y autoría personal
 
-**ELEMENTOS PROTEGIDOS:**
-- ✓ Nombre y credenciales profesionales
-- ✓ Cédula SEP 14051498
-- ✓ Certificación OLA/CICA
-- ✓ Información fiscal y financiera
-- ✓ Diseño y estructura de la tarjeta
-- ✓ Tagline personal: "Estrategias que definen futuros"
+- Nombre, título profesional y datos de identificación
+- Lema personal: «Estrategias que definen futuros»
+- Frase oculta de la tarjeta
+- Diseño, código, sistema de interacción (toque y pulsación sostenida, retroalimentación sonora y háptica) y textos
 
-**© 2025 Saúl Dávila Pantoja. Todos los derechos reservados.**
+**© 2026 MAE Saúl Dávila Pantoja. Todos los derechos reservados.**
 
 ---
 
-## 📜 Restricciones de Uso
+## Restricciones de uso
 
-### ❌ PROHIBIDO (Sin autorización escrita):
+### Prohibido sin autorización escrita
 
-1. Uso comercial del diseño o código
-2. Clonar/bifurcar con fines comerciales
-3. Uso de marca AIDN en proyectos propios
-4. Uso de identidad personal (nombre, credenciales, datos)
-5. Modificación y redistribución comercial
-6. Scraping de datos personales o fiscales
+1. Uso comercial del diseño, el código o los textos.
+2. Clonar o bifurcar con fines comerciales.
+3. Usar la marca o el logotipo de AIDN en proyectos propios o de terceros.
+4. Usar la identidad personal: nombre, cédula, datos fiscales, de contacto o de pago.
+5. Suplantar al titular o presentarse como su representante.
+6. Modificar y redistribuir con fines comerciales.
+7. Extracción automatizada de los datos personales, fiscales o de pago.
+8. Eliminar o alterar avisos de derechos de autor.
 
-### ✅ PERMITIDO (Con atribución):
+### Permitido
 
-1. Visualización del código para fines educativos
-2. Referencias técnicas en artículos (con crédito)
-3. Inspiración conceptual (no copia directa)
-4. Fork para estudio personal (no público)
+1. Abrir, usar y compartir la tarjeta mediante su enlace oficial o su código QR.
+2. Consultar el código con fines educativos y de aprendizaje personal.
+3. Citarlo en artículos o tutoriales, con atribución.
+4. Tomar ideas generales de interacción, sin copiar el código ni el diseño.
 
----
-
-## ⚖️ Licencia Propietaria
-
-**Este proyecto NO está bajo licencia de código abierto.**
+**Atribución requerida:**
 
 ```
-Copyright © 2025 AIDN & Saúl Dávila Pantoja
+Tarjeta digital de MAE Saúl Dávila Pantoja · AIDN Strategic Consulting
+https://maesauldavila.github.io/tarjeta-digital/
+Obra bajo licencia propietaria. Uso de referencia únicamente.
+```
 
-LICENCIA PROPIETARIA
+---
 
-Todos los derechos reservados. No se permite:
+## Licencia propietaria
+
+**Este proyecto no está bajo una licencia de código abierto.**
+
+```
+Copyright © 2026 AIDN Strategic Consulting y Saúl Dávila Pantoja
+
+LICENCIA PROPIETARIA · TARJETA DIGITAL
+
+Todos los derechos reservados. Sin autorización escrita no se permite:
 - Uso comercial
-- Redistribución
-- Uso de marca AIDN
-- Uso de identidad personal
-- Trabajos derivados comerciales
+- Redistribución o clonación
+- Uso de la marca AIDN
+- Uso de la identidad personal o de los datos publicados
+- Extracción automatizada de datos
+- Obras derivadas con fines comerciales
 
-Uso educativo permitido con atribución adecuada.
+Se permiten el uso normal de la tarjeta y la consulta educativa con atribución.
 
-Para permisos comerciales: sauldavila@gmail.com
+Permisos comerciales: sauldavila@aidnstrategic.com
 ```
 
-### 🚨 Protección Legal
-
-Este repositorio está protegido bajo:
-- Ley Federal del Derecho de Autor (México)
-- Digital Millennium Copyright Act (DMCA)
-- Propiedad intelectual corporativa de AIDN
-
-**Violaciones serán reportadas bajo DMCA Takedown Notice.**
+El acceso, la visualización o el uso de este proyecto implica la aceptación de estos términos.
 
 ---
 
-## 🛠️ Tecnologías
+## Alcance de la protección y elementos de terceros
 
-### Stack
-- **HTML5** semántico
-- **CSS3** (Custom Properties, Backdrop Filters, Grid, Flexbox)
-- **JavaScript ES6+** vanilla (sin frameworks)
-- **QRious 4.0.2** - Generación de códigos QR
+- **Sí se protege** la expresión concreta: código, diseño, textos, selección y organización de contenidos, y la combinación de gestos con retroalimentación que define la experiencia.
+- **No se reclaman derechos** sobre técnicas y estándares generales (por ejemplo, el formato vCard, los códigos QR, las interfaces de copiado al portapapeles o la detección de pulsación sostenida).
+- **Plataforma:** GitHub permite, según sus propios términos, ver y bifurcar los repositorios públicos dentro de la plataforma. Eso no otorga una licencia de uso fuera de lo que se indica aquí.
+- **Visibilidad del código:** la tarjeta es una página web; el navegador recibe todo su código. Verlo no equivale a una licencia para copiarlo.
+- **Componentes de terceros:**
+  - **QRious 4.0.2** (generación de códigos QR), licencia MIT, de neocotic. Se carga desde cdnjs.
+  - **Google Fonts** (IBM Plex Sans, IBM Plex Mono y Rajdhani), con licencia de fuente abierta.
 
-### APIs del Navegador
-- Web Audio API (feedback sonoro)
-- Vibration API (feedback háptico)
-- Clipboard API (copiar datos)
-- Web Share API (compartir QR)
-- localStorage API (persistencia de tema)
+Las restricciones de este documento aplican al código propio, el diseño, la marca y el contenido.
 
 ---
 
-## 💻 Instalación Local
+## Aspectos técnicos
 
-### Visualización Directa
+- **Arquitectura:** archivo único (`index.html`) con CSS y JavaScript en línea, sin proceso de compilación.
+- **Lenguajes:** HTML5, CSS3 (propiedades personalizadas, filtros de fondo, cuadrícula y flexbox) y JavaScript moderno sin *frameworks*.
+- **APIs del navegador:** Web Audio (sonido), Vibration (háptica), Clipboard (copiado), Web Share (compartir el QR como imagen) y `localStorage` (preferencia de tema).
+- **Tema:** claro y oscuro, con detección automática y preferencia manual guardada en el navegador.
+- **Adaptable:** diseño responsivo para teléfonos, tabletas y escritorio.
+- **Accesibilidad:** botones con etiquetas, foco visible, objetivos táctiles de al menos 44 px y modal con atributos de diálogo.
+- **Metadatos:** Open Graph y Twitter Cards para la vista previa en WhatsApp y redes.
+- **Dependencias externas en ejecución:** QRious (cdnjs) y Google Fonts.
+- **Navegadores:** versiones actuales de Chrome, Edge, Firefox y Safari.
 
-```bash
-# Clonar (solo para visualización educativa)
-git clone https://github.com/maesauldavila/tarjeta-digital.git
+### Privacidad de la propia página
 
-# Abrir en navegador
-open index.html
-```
-
-### Con Servidor Local (Recomendado)
-
-**Python:**
-```bash
-python -m http.server 8000
-# Abrir http://localhost:8000
-```
-
-**Node.js:**
-```bash
-npx http-server -p 8000
-```
-
-**VS Code:**
-- Instalar extensión "Live Server"
-- Click derecho en `index.html` → "Open with Live Server"
+La tarjeta no usa *cookies* propias, analítica ni publicidad. Solo guarda en el navegador de quien la visita la preferencia de tema. El código QR se genera en el dispositivo; no se envía a ningún servidor. Las fuentes y la biblioteca QR las sirven terceros, que pueden recibir datos de la conexión, como la dirección IP.
 
 ---
 
-## 📊 Estructura del Proyecto
+## Estructura del proyecto
 
 ```
 tarjeta-digital/
 │
-├── index.html                  # Aplicación completa (single-file)
-├── README.md                   # Este archivo
-├── LICENSE                     # Licencia propietaria
+├── index.html              # Tarjeta completa (archivo único)
+├── README.md               # Este documento
+├── LICENSE                 # Licencia propietaria
 │
-├── favicon.ico                 # Favicon 16x16
-├── favicon-32x32.png          # Favicon 32x32
-├── apple-touch-icon.png       # iOS icon
-├── banner-tarjeta-digital.png # OG image (1280x640)
-│
-└── .github/
-    └── FUNDING.yml            # Info de contacto
-```
-
-**Arquitectura single-file por diseño:**
-- ✅ Máxima portabilidad
-- ✅ Cero dependencias de build
-- ✅ Deploy instantáneo
-- ✅ Fácil mantenimiento
-
----
-
-## 🎯 Uso
-
-### Para Visitantes
-
-1. Navegar a la URL
-2. Clic en ícono central (⊚) para QR
-3. Clic en credenciales para copiar
-4. Mantener presionado para acciones avanzadas
-5. Descargar vCard desde modal
-
-### Para Desarrolladores (Referencia)
-
-**Puntos de aprendizaje destacados:**
-
-```javascript
-// Estado centralizado
-const state = {
-  theme: 'light',
-  themeManuallySet: false,
-  qrGenerated: false
-};
-
-// Caché de elementos DOM (-40% consultas)
-const els = {};
-
-// Feedback multisensorial
-const playSound = (frequency, duration) => {
-  const ctx = new AudioContext();
-  const osc = ctx.createOscillator();
-  osc.frequency.setValueAtTime(frequency, ctx.currentTime);
-  // ...
-};
-
-// Hold gesture detection
-let holdTimer = null;
-element.addEventListener('mousedown', () => {
-  holdTimer = setTimeout(handleLongPress, 800);
-});
+├── favicon.ico
+├── favicon-16x16.png
+├── favicon-32x32.png
+├── apple-touch-icon.png    # Ícono para iOS
+└── banner-tarjeta.png      # Imagen Open Graph (1280×640)
 ```
 
 ---
 
-## 🔐 Política de DMCA
+## Preguntas frecuentes
 
-**Reportamos violaciones activamente.**
+### ¿Puedo usar este código para mi propia tarjeta?
 
-Si detectamos uso no autorizado:
-1. DMCA Takedown Notice a GitHub
-2. Reporte a plataformas de hosting
-3. Acciones legales según gravedad
+No directamente. Tendrías que retirar toda la marca AIDN y toda la información personal, y solicitar autorización por escrito para usar el código y el diseño.
 
-**Para evitar problemas:**
-- Solicita permisos ANTES de usar
-- Proporciona atribución adecuada
-- Respeta las restricciones
+### ¿Puedo hacer un fork?
 
----
+GitHub permite bifurcar repositorios públicos dentro de la plataforma. Un fork es solo para estudio personal; si lo haces público, debes eliminar todo el contenido protegido: marca, identidad y datos personales.
 
-## 📞 Contacto
+### ¿Puedo compartir mi tarjeta con el código QR o el enlace?
 
-### Para Permisos Comerciales
+Sí. Está pensada para compartirse. Lo que no se permite es copiar o reutilizar su código, su diseño o sus datos.
 
-**MAE Saúl Dávila Pantoja**
-- 📧 Email: sauldavila@gmail.com
-- 📱 WhatsApp: [+52 1 55 3719 1248](https://wa.me/5215537191248)
-- 🌐 Tarjeta: [maesauldavila.github.io/tarjeta-digital](https://maesauldavila.github.io/tarjeta-digital/)
+### ¿Cómo verifico la cédula profesional?
 
-### Para Marca AIDN
+Mantén presionada la cédula en la tarjeta para abrir el portal de verificación de la SEP, o consulta el número directamente en el portal oficial.
 
-- 📧 Via Saúl Dávila (Representante Autorizado)
+### ¿Puedo usar los datos de pago o fiscales para otra cosa?
 
-### Reportar Uso No Autorizado
-
-**Email:** sauldavila@gmail.com  
-**Asunto:** "Reporte DMCA - Tarjeta Digital"
-
----
-
-## 🙏 Reconocimientos
-
-### Tecnologías Open Source
-
-- **QRious** - MIT License (neocotic)
-- **Google Fonts** - Open Font License
-  - IBM Plex Sans
-  - Rajdhani
-
-**Nota:** Las restricciones aplican únicamente al código personalizado, diseño, branding y contenido propietario.
-
----
-
-## 📈 Métricas
-
-### Lighthouse Scores
-
-| Métrica | Score |
-|---------|-------|
-| Performance | 98/100 |
-| Accessibility | 100/100 |
-| Best Practices | 100/100 |
-| SEO | 100/100 |
-
-### Compatibilidad
-
-| Navegador | Versión | Soporte |
-|-----------|---------|---------|
-| Chrome | 90+ | ✅ |
-| Firefox | 88+ | ✅ |
-| Safari | 14+ | ✅ |
-| Edge | 90+ | ✅ |
-
----
-
-## ❓ FAQ
-
-### ¿Puedo usar este código para mi tarjeta?
-
-**No directamente.** Necesitarías eliminar toda la marca AIDN, información personal, y contactarme para permisos.
-
-### ¿Puedo hacer un fork público?
-
-**Solo para estudio personal.** Si lo haces público, elimina TODO el contenido protegido.
+No. Están publicados para clientes de AIDN y contactos profesionales. Antes de transferir, confirma el dato por un canal de contacto oficial.
 
 ### ¿Cuánto cuesta una licencia comercial?
 
-**Contactar para negociación:**
-- Uso individual: $500-1,500 USD
-- Uso corporativo: $2,000-5,000 USD
-- Licencia de plantilla: $10,000+ USD
-
-### ¿El hosting es permanente?
-
-**Sí.** GitHub Pages es gratuito para siempre mientras tu cuenta esté activa. Sin fecha de expiración ni renovaciones.
+Depende del uso y del alcance. Escribe a sauldavila@aidnstrategic.com para una propuesta.
 
 ---
 
-## 🎓 Uso Educativo
+## Cómo reportar un uso no autorizado
 
-### Si Quieres Referenciar
+Escribe a **sauldavila@aidnstrategic.com** con el asunto «Reporte de uso indebido · Tarjeta digital» e incluye:
 
-**En artículos:**
-```markdown
-Inspirado por [Tarjeta Digital - Saúl Dávila]
-(https://github.com/maesauldavila/tarjeta-digital)
+- la dirección (URL) donde aparece el uso,
+- evidencia (capturas de pantalla o archivos) y
+- una breve descripción de lo que se reproduce.
 
-Nota: Código original bajo licencia propietaria.
-Solo se usan conceptos generales.
-```
+**Procedimiento ante un uso no autorizado:**
 
-**Permitido:**
-- ✅ Explicar conceptos técnicos
-- ✅ Screenshots con marca visible
-- ✅ Disclaimer de propiedad intelectual
+1. Notificación directa al infractor, con un plazo para retirar el contenido.
+2. Notificación de retiro (DMCA) a GitHub o aviso a la plataforma de alojamiento.
+3. Evaluación de las acciones legales que correspondan.
 
-**Prohibido:**
-- ❌ Copiar código sin atribución
-- ❌ Usar como base comercial
+**Suplantación o uso de los datos de pago:** si recibes una solicitud de pago que dice venir de AIDN o de su titular y no coincide con los canales de este documento, no transfieras. Repórtala al correo anterior.
 
 ---
 
-## 💡 Filosofía del Proyecto
+## Contribuciones
 
-> *"La estrategia empieza cuando termina la improvisación."*
+**Política: cerrado.** Este es un proyecto personal y corporativo.
 
-**Principios:**
-1. **Profesionalismo primero** - Cada detalle cuenta
-2. **Verificabilidad** - Credenciales auténticas
-3. **Eficiencia** - Reducir fricciones
-4. **Innovación** - Estar a la vanguardia
-5. **Accesibilidad** - Funcional para todos
+- No se aceptan *pull requests*.
+- No se aceptan *issues* públicos.
+- No se buscan colaboradores.
 
----
-
-## 🏆 Valor del Proyecto
-
-**Este proyecto representa:**
-- 120-150 horas de desarrollo senior
-- $8,500-11,000 USD valor de mercado
-- Código production-ready
-- Branding protegido legalmente
-
-**Respeto mutuo = Comunidad saludable.**
+Para reportar un error, escribe a sauldavila@aidnstrategic.com.
 
 ---
 
-## 📝 Changelog
+## Contacto
 
-### v1.0.0 (Diciembre 2025)
+**MAE Saúl Dávila Pantoja** · Consultor Estratégico · Fundador de AIDN Strategic Consulting
 
-**Features:**
-- ✅ Arquitectura single-file
-- ✅ Verificación de credenciales
-- ✅ Datos fiscales integrados
-- ✅ Dark mode automático
-- ✅ Feedback multisensorial
-- ✅ QR generation
-- ✅ 15+ micro-interacciones
+- WhatsApp: [+52 55 3719 1248](https://wa.me/5215537191248)
+- Correo electrónico: sauldavila@aidnstrategic.com
+- Sitio web: [aidnstrategic.com](https://aidnstrategic.com)
+- Tarjeta: [maesauldavila.github.io/tarjeta-digital](https://maesauldavila.github.io/tarjeta-digital/)
 
-**Performance:**
-- 98/100 Lighthouse
-- ~50KB peso total
-- <1s carga en 3G
+**Marca AIDN y permisos comerciales:** sauldavila@aidnstrategic.com
 
 ---
 
-## 🤝 Contribuciones
+## Historial de cambios
 
-**Política: CERRADO**
+### 2026.10 (octubre de 2026)
 
-Este es un proyecto personal/corporativo privado.
+- Tarjeta renovada con el título «Consultor Estratégico · Planeación y dirección empresarial» y el lema corporativo vigente.
+- Modal con tres secciones: tarjeta de contacto, información fiscal e información de pagos.
+- Doble toque en el logotipo para abrir aidnstrategic.com y frase oculta en el ícono central.
+- README reescrito: datos personales publicados, restricciones contra la extracción y la suplantación, alcance de la protección y elementos de terceros.
 
-- ❌ No se aceptan Pull Requests
-- ❌ No se aceptan Issues públicos
-- ❌ No se buscan colaboradores
+### Versión inicial (diciembre de 2025)
 
-**Para reportar bugs:** sauldavila@gmail.com
-
----
-
-## ⭐ ¿Te Gusta Este Proyecto?
-
-- ⭐ Dale una estrella al repositorio
-- 📢 Compártelo con atribución
-- 💬 Contacta para permisos comerciales
-- 🙏 Respeta la propiedad intelectual
-
-**Dar estrella ≠ Permiso de uso comercial**
+- Arquitectura de archivo único, tema claro y oscuro, QR bajo demanda y retroalimentación sonora y háptica.
 
 ---
 
-**© 2025 AIDN & Saúl Dávila Pantoja - Todos los derechos reservados**
+**© 2026 AIDN Strategic Consulting y Saúl Dávila Pantoja · Todos los derechos reservados**
 
-*Tarjeta Digital Profesional con verificación de credenciales*
+**Última actualización:** octubre de 2026 · **Versión del documento:** 2026.10 · **Mantenedor:** MAE Saúl Dávila Pantoja
